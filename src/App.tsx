@@ -1,10 +1,10 @@
-import { Button } from "./components/ui/button";
+import FoodDeliveryForm from "./components/food-delivery-form/food-delivery-form";
 
 function App() {
   return (
-    <div>
-      <h3>App</h3>
-      <Button>Click me</Button>
+    <div className="max-w-5xl mx-auto">
+      <h1>Food delivery app</h1>
+      <FoodDeliveryForm />
     </div>
   );
 }
