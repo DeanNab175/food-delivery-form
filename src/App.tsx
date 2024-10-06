@@ -1,4 +1,4 @@
-import FoodDeliveryForm from "./components/food-delivery-form/food-delivery-form";
+import FoodDeliveryForm from "./components/food-delivery-form/food-delivery-form.component";
 
 function App() {
   return (

@@ -12,7 +12,7 @@ type FoodDeliveryFormErrorType = {
   mobile: string;
 };
 
-function FoodDeliveryForm() {
+function TypicalForm() {
   const [values, setValues] = useState<FoodDeliveryFormType>({
     customerName: "",
     mobile: "",
@@ -86,4 +86,4 @@ function FoodDeliveryForm() {
   );
 }
 
-export default FoodDeliveryForm;
+export default TypicalForm;
