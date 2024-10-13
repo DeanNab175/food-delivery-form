@@ -1,11 +1,14 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+// import useRenderCount from "@/hooks/useRenderCount";
 
 type FoodDeliveryFormType = {
   customerName: string;
   mobile: string;
 };
+
+// const RenderCount = useRenderCount();
 
 type FoodDeliveryFormErrorType = {
   customerName: string;
@@ -61,6 +64,7 @@ function TypicalForm() {
         </ul>
       )}
       <form autoComplete="off" onSubmit={onSubmit}>
+        {/* <RenderCount /> */}
         <div className="my-3">
           <Input
             type="text"
