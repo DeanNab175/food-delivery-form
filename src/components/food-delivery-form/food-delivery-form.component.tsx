@@ -105,6 +105,22 @@ function FoodDeliveryForm() {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                   message: "Incorrect email format",
                 },
+                validate: {
+                  notFake: (value) => {
+                    return (
+                      value !== "email@gmail.com" ||
+                      "This particular email is blocked."
+                    );
+                  },
+                  notFromBlacklistedDomain: (value, values) => {
+                    console.log("values", values);
+                    return (
+                      (!value.endsWith("@xyz.com") &&
+                        !value.endsWith("@example.com")) ||
+                      "This domain is not supported."
+                    );
+                  },
+                },
               })}
             />
             {errors.email && (
